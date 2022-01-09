@@ -1,8 +1,8 @@
-from Pages.Login import Login
+from SessionSeven.Pages.Login import Login
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 from time import sleep
-from Pages.MainPage import MainPage
+from SessionSeven.Pages.MainPage import MainPage
 import unittest
 
 

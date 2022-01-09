@@ -1,4 +1,4 @@
-from Locators import *
+from SessionSeven.Locators import *
 
 
 class Login:
