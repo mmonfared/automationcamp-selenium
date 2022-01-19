@@ -2,7 +2,7 @@
 
 This is the project created for the QA Automation Course "AutomationCamp" in YouTube and will update during the session.
 
-AutomationCamp YT Channel: https://www.youtube.com/channel/UCJQ0HNGo8OFtrPjx2vPSkKg
+AutomationCamp YT Channel: https://www.youtube.com/automationcamp
 
 **Contact**
 - Mohammad Monfared
