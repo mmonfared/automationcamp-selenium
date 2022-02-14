@@ -74,10 +74,12 @@ driver.execute_script("document.querySelector('table td:last-child').scrollIntoV
 
 ################### Is displayed #########################
 driver.get("https://www.imdb.com/chart/top/")
-try:
-    driver.find_element('link text', 'Andrei Rublev')
-except:
-    pass
+for i in range(10):
+    try:
+        result = driver.find_element('link text', 'Andrei Rublev').is_displayed()
+    except:
+        sleep(0.5)
+
 ################### Scroll Using ActionChains #########################
 driver.get("https://trytestingthis.netlify.app/")
 el1 = driver.find_element('xpath', "//*[@name='message']")
