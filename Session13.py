@@ -26,7 +26,7 @@ sleep(3)
 driver.find_element(By.XPATH, "//button[text()='Click for JS Confirm']").click()
 sleep(1)
 alert.accept()
-driver.find_element(By.XPATH, "//*[text()='You clicked: Ok']")
+# driver.find_element(By.XPATH, "//*[text()='You clicked: Ok']")  # or we can check the DOM like following
 dom = driver.page_source
 assert 'You clicked: Ok' in dom
 sleep(3)
@@ -35,7 +35,7 @@ sleep(3)
 driver.find_element(By.XPATH, "//button[text()='Click for JS Confirm']").click()
 sleep(1)
 alert.dismiss()
-driver.find_element(By.XPATH, "//*[text()='You clicked: Cancel']")
+# driver.find_element(By.XPATH, "//*[text()='You clicked: Cancel']")
 dom = driver.page_source
 assert 'You clicked: Cancel' in dom
 sleep(3)
