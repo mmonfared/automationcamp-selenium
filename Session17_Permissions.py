@@ -24,6 +24,6 @@ camera_test_website = "https://webcamtests.com/"
 microphone_test_website = "https://mictests.com/"
 desktop_notif_test_website = "https://web-push-book.gauntface.com/demos/notification-examples/"
 
-driver.get("https://www.play1.automationcamp.ir/index.html")
+driver.get("http://play1.automationcamp.ir/index.html")
 driver.execute_script("Notification.requestPermission()")
 sleep(10)

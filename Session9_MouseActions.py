@@ -10,11 +10,11 @@ driver.implicitly_wait(3)
 actions = ActionChains(driver)
 
 # Click
-driver.get("https://trytestingthis.netlify.app/")
+driver.get("http://play2.automationcamp.ir")
 driver.find_element("id", "male").click()
 
 # Double Click
-driver.get("https://trytestingthis.netlify.app/")
+driver.get("http://play2.automationcamp.ir")
 el = driver.find_element('xpath', "//button[text()='Double-click me']")
 actions.double_click(el)
 actions.perform()
@@ -22,13 +22,13 @@ driver.find_element("xpath", "//*[text()='Your Sample Double Click worked!']")
 sleep(2)
 
 # Right Click
-driver.get("https://trytestingthis.netlify.app/")
+driver.get("http://play2.automationcamp.ir")
 el = driver.find_element('id', 'fname')
 actions.context_click(el).perform()
 sleep(3)
 
 # Move the cursor
-driver.get("https://trytestingthis.netlify.app/")
+driver.get("http://play2.automationcamp.ir")
 el = driver.find_element('xpath', "//*[@class='tooltip']")
 actions.move_to_element(el).perform()
 sleep(3)
@@ -64,7 +64,7 @@ actions.drag_and_drop(el1, el2).perform()
 sleep(2)
 
 # Get Coordinates
-driver.get("https://trytestingthis.netlify.app/")
+driver.get("http://play2.automationcamp.ir")
 offset = driver.find_element("xpath", "//*[text()='Lets you select only one option']").location
 
 # Move by offset

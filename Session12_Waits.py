@@ -22,7 +22,7 @@ print(datetime.now())
 #######################################################
 
 # 2 - Implicitly Wait
-driver.get("https://play1.automationcamp.ir/index.html")
+driver.get("http://play1.automationcamp.ir/index.html")
 driver.implicitly_wait(3)
 print(datetime.now())
 try:
@@ -67,7 +67,7 @@ def wait_until_element_has_not_an_attribute(element_selector, element_locator, a
     raise Exception("Element attribute in or equals: " + str(attribute_value))
 
 
-driver.get("https://www.play1.automationcamp.ir/expected_conditions.html")
+driver.get("http://play1.automationcamp.ir/expected_conditions.html")
 trigger = driver.find_element(By.ID, "enabled_trigger")
 trigger.location_once_scrolled_into_view
 wait_until_element_has_an_attribute(By.ID, "enabled_target", 'class', 'danger', exact=False)
@@ -102,7 +102,7 @@ def wait_until_element_is_not_enabled(selector, locator, timeout):
             sleep(0.5)
 
 
-driver.get("https://www.play1.automationcamp.ir/expected_conditions.html")
+driver.get("http://play1.automationcamp.ir/expected_conditions.html")
 trigger = driver.find_element(By.ID, "enabled_trigger")
 trigger.location_once_scrolled_into_view
 trigger.click()
@@ -136,7 +136,7 @@ def wait_until_element_is_not_visible(selector, locator, timeout=5):
             sleep(0.5)
 
 
-driver.get("https://www.play1.automationcamp.ir/expected_conditions.html")
+driver.get("http://play1.automationcamp.ir/expected_conditions.html")
 trigger = driver.find_element(By.ID, "visibility_trigger")
 trigger.location_once_scrolled_into_view
 print(driver.find_element(By.ID, "visibility_target").is_displayed())
@@ -146,7 +146,7 @@ print(driver.find_element(By.ID, "visibility_target").is_displayed())
 #######################################################
 
 # 9 - WebDriverWait until/until not Expected Conditions
-driver.get("https://www.play1.automationcamp.ir/expected_conditions.html")
+driver.get("http://play1.automationcamp.ir/expected_conditions.html")
 trigger = driver.find_element(By.ID, "enabled_trigger")
 trigger.location_once_scrolled_into_view
 trigger.click()
