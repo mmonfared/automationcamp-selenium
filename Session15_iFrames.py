@@ -39,7 +39,7 @@ assert "About Python" in driver.title
 print("PASS")
 
 #######  3) Parent Frame
-driver.get("https://www.play1.automationcamp.ir/frames.html")
+driver.get("http://play1.automationcamp.ir/frames.html")
 sleep(1)
 driver.switch_to.frame('frame1')
 driver.find_element('id', 'click_me_1').click()

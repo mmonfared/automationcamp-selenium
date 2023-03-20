@@ -23,7 +23,7 @@ def continue_session():
 
 driver = open_session()
 driver.implicitly_wait(3)
-driver.get("https://www.play2.automationcamp.ir/index.html")
+driver.get("http://play2.automationcamp.ir/index.html")
 driver.find_element(By.ID, 'fname').send_keys("Mohammad")
 driver.find_element(By.XPATH, "//input[@id='male']")
 driver.find_element(By.ID, "lastName").send_keys("Monfared")

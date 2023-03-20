@@ -13,12 +13,12 @@ driver.implicitly_wait(2)
 
 ################### Scroll Using JavaScript Commands #########################
 # Scroll down by pixel
-driver.get("https://trytestingthis.netlify.app/")
+driver.get("http://play2.automationcamp.ir")
 driver.execute_script("window.scrollBy(0,200)")
 sleep(3)
 
 # Scroll to specific position
-driver.get("https://trytestingthis.netlify.app/")
+driver.get("http://play2.automationcamp.ir")
 driver.execute_script("window.scrollTo(0,500)")
 
 # Scroll to element if could find by driver
@@ -81,7 +81,7 @@ for i in range(10):
         sleep(0.5)
 
 ################### Scroll Using ActionChains #########################
-driver.get("https://trytestingthis.netlify.app/")
+driver.get("http://play2.automationcamp.ir")
 el1 = driver.find_element('xpath', "//*[@name='message']")
 el2 = driver.find_element('id', 'fname')
 actions.move_to_element(el2).click_and_hold().move_to_element(el1).release().perform()
@@ -90,7 +90,7 @@ sleep(3)
 ################### Scroll Using Keyboard #########################
 
 # Scroll to End of page and Top of the page
-driver.get("https://trytestingthis.netlify.app/")
+driver.get("http://play2.automationcamp.ir")
 page_el = driver.find_element('tag name', 'html')
 actions.send_keys_to_element(page_el, Keys.END).perform()
 sleep(3)

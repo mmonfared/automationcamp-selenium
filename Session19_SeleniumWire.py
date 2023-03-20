@@ -127,7 +127,7 @@ def mock_response(request):
         )
 driver.request_interceptor = mock_response
 sleep(2)
-driver.get("https://www.play2.automationcamp.ir/index.html")
+driver.get("http://play2.automationcamp.ir/index.html")
 sleep(5)
 
 # 6 Unset an Interceptor
